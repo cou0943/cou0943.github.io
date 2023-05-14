@@ -14,14 +14,7 @@ class User {
       this.#Houses.push(newHouse);
       alert("You bought a new House at " + HouseAddress + ".");
     }
-  
-    sellHouse(Address) {
-      for (let i = 0; i < this.#Houses.length; i++) {
-        let HouseAddress = this.#Houses[i].getAddress();
-        if (HouseAddress == Address) {
-          alert(HouseAddress + " has been sold");
-          this.#Houses.splice(i, 1);
-        }
+
       }
     }
   }
